@@ -3,7 +3,7 @@ use std::fs::File;
 use std::io;
 use std::io::prelude::*;
 
-fn get_nums_from_lines(filename: &str) -> io::Result<()> {
+fn get_sum_from_file(filename: &str) -> io::Result<()> {
     let file = File::open(&filename)?;
 
     let reader = io::BufReader::new(file);
@@ -21,7 +21,7 @@ fn get_nums_from_lines(filename: &str) -> io::Result<()> {
 fn main() {
     let filename = env::args().nth(1).expect("Please supply input filename.");
 
-    let _ =  get_nums_from_lines(&filename).expect("Error");
+    let _ =  get_sum_from_file(&filename).expect("Error");
 
 }
 
