@@ -53,11 +53,6 @@ def part_b(lines):
 
     print(f'Power of mins is: {pow}')
 
-def main(lines):
+def today(lines):
     part_a(lines)
     part_b(lines)
-
-
-
-if __name__ == "__main__":
-    main(sys.argv)
