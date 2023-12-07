@@ -61,9 +61,6 @@ def part_b(lines):
 
     print(f'Part B sum was {sum}.')
 
-def main(lines):
+def today(lines):
     part_a(lines)
     part_b(lines)
-
-if __name__ == "__main__":
-    main(sys.argv[1:])
