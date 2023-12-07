@@ -15,16 +15,22 @@ def main(argv):
     args = parser.parse_args()
 
     with open(f'./day_{args.day}/input.txt') as f:
-        input = f.read().splitlines()
+        input = f.read()
+        split_input = input.splitlines()
 
     match args.day:
         case '01':
             from day_01 import day01
-            day01.main(input)
+            day01.main(split_input)
 
         case '02':
             from day_02 import day02
-            day02.main(input)
+            day02.main(split_input)
+
+        case '03':
+            from day_03 import day03
+            day03.main(split_input)
+
         case _:
             return
         
