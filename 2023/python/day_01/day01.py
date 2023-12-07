@@ -31,6 +31,8 @@ def get_calib_from_line_b(line):
     if digits:
         first, last = (digits[0], digits[-1])
         fi, li = (line.find(first), line.rfind(last))
+    else:
+        return 0
     wordnums = get_nums(line)
     if wordnums:
         fw, fwi = wordnums[0]
