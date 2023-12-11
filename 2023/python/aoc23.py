@@ -39,6 +39,10 @@ def main(argv):
             from day_05 import day05
             day05.today(split_input)
 
+        case '06':
+            from day_06 import day06
+            day06.today(split_input)
+
         case _:
             return
         
